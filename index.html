@@ -25,7 +25,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>STVD: Towards High-quality 4D Video Generation via Spatial-Temporally
+    Consistent Video Diffusion Priors</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -52,74 +53,16 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">STVD: Towards High-quality 4D Video Generation via
+              Spatial-Temporally
+              Consistent Video Diffusion Priors</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-              </span>
-            </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Institution Name<br>Conferance name and year</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-            </div>
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- Arxiv PDF link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-
-                <!-- Supplementary PDF link -->
-                <span class="link-block">
-                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Supplementary</span>
-                  </a>
-                </span>
-
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -127,14 +70,7 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <!-- Your video here -->
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
-        </h2>
+        <img src="static/images/image_111.png" alt="Banner Image" style="width: 100%; height: auto;">
       </div>
     </div>
   </section>
@@ -148,11 +84,21 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus.
-              Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a
-              vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac
-              gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed
-              vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+              4D content generation, encompassing dynamic 3D representations with temporal evolution, has emerged as a
+              crucial technology for immersive applications. Existing approaches face fundamental challenges including
+              coarse texture generation, poor surface quality, and spatiotemporal inconsistencies. Through systematic
+              analysis, we identify a critical trade-off: 4D representation-based methods achieve superior spatial
+              consistency but suffer from poor texture quality, while diffusion model-based approaches produce
+              high-quality frames but struggle with spatiotemporal coherence. To address these limitations, we first
+              develop a specialized Spatial-Temporally Consistent (STC) enhancer, trained on a carefully curated dataset
+              of 4D rendered videos paired with ground truth sequences. This enhancer demonstrates plug-and-play
+              capability across heterogeneous 4D representations while significantly improving visual quality. Building
+              upon this, we present STVD, a comprehensive three-stage framework that cascades 4D representation-based
+              generation with our enhancer. The pipeline initially generates spatiotemporally consistent multi-view
+              sequences, optimizes 4D Gaussian Splatting representations with novel diffusion distillation techniques,
+              and finally enhances the rendered results through our STC enhancer. Extensive experiments demonstrate that
+              our method significantly outperforms existing state-of-the-art approaches in both quantitative metrics and
+              qualitative assessments, while maintaining spatiotemporal consistency.
             </p>
           </div>
         </div>
@@ -168,8 +114,8 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">VIdeo-to-4D</h2>
-        <h3 class="subtitle is-5 has-text-grey">合成40物体合成-四角度</h3>
+        <h2 class="title is-3">Video-to-4D</h2>
+        <h3 class="subtitle is-5 has-text-grey">Muti-view Visualization of Synthetic Objects</h3>
 
         <!-- 分页容器1 -->
         <div class="pagination-container" id="comparisonContainer1">
@@ -2547,8 +2493,8 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">VIdeo-to-4D</h2>
-        <h3 class="subtitle is-5 has-text-grey">合成40物体合成-round</h3>
+        <h2 class="title is-3">Video-to-4D</h2>
+        <h3 class="subtitle is-5 has-text-grey">Muti-view Visualization of Synthetic Objects</h3>
 
         <!-- 分页容器2 -->
         <div class="pagination-container" id="comparisonContainer2">
@@ -2962,8 +2908,8 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">VIdeo-to-4D</h2>
-        <h3 class="subtitle is-5 has-text-grey">真实数据对比-round</h3>
+        <h2 class="title is-3">Video-to-4D</h2>
+        <h3 class="subtitle is-5 has-text-grey">Muti-view Visualization of Real-world Objects</h3>
 
         <!-- 分页容器3 -->
         <div class="pagination-container" id="comparisonContainer3">
@@ -3130,8 +3076,8 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">VIdeo-to-4D</h2>
-        <h3 class="subtitle is-5 has-text-grey">真实数据对比-三角度</h3>
+        <h2 class="title is-3">Video-to-4D</h2>
+        <h3 class="subtitle is-5 has-text-grey">Muti-view Visualization of Real-world Objects</h3>
       </div>
     </div>
   </section>
@@ -4451,37 +4397,8 @@
 
 
 
-  <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-  </section>
-  <!--End BibTex citation -->
 
 
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-
-            <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                target="_blank">Academic Project Page Template</a> which was adopted from the <a
-                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-              You are free to borrow the source code of this website, we just ask that you link back to this page in
-              the footer. <br> This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Statcounter tracking code -->
 
