@@ -25,8 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>STVD: Towards High-Quality 4D Video Generation via Spatial-Temporally
-    Consistent Video Diffusion Priors</title>
+  <title>4D-Enhancer: Enhancing Spatio-temporal Consistency of 4D Content via Video Diffusion Priors</title>
   <link rel="icon" type="image/x-icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -53,9 +52,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">STVD: Towards High-Quality 4D Video Generation via
-              Spatial-Temporally
-              Consistent Video Diffusion Priors</h1>
+            <h1 class="title is-1 publication-title">4D-Enhancer: Enhancing Spatio-temporal Consistency of 4D Content
+              via Video Diffusion Priors</h1>
             <div class="is-size-5 publication-authors">
 
 
@@ -89,16 +87,17 @@
               coarse texture generation, poor surface quality, and spatiotemporal inconsistencies. Through systematic
               analysis, we identify a critical trade-off: 4D representation-based methods achieve superior spatial
               consistency but suffer from poor texture quality, while diffusion model-based approaches produce
-              high-quality frames but struggle with spatiotemporal coherence. To address these limitations, we first
-              develop a specialized Spatial-Temporally Consistent (STC) enhancer, trained on a carefully curated dataset
-              of 4D rendered videos paired with ground truth sequences. This enhancer demonstrates plug-and-play
-              capability across heterogeneous 4D representations while significantly improving visual quality. Building
-              upon this, we present STVD, a comprehensive three-stage framework that cascades 4D representation-based
-              generation with our enhancer. The pipeline initially generates spatiotemporally consistent multi-view
-              sequences, optimizes 4D Gaussian Splatting representations with novel diffusion distillation techniques,
-              and finally enhances the rendered results through our STC enhancer. Extensive experiments demonstrate that
-              our method significantly outperforms existing state-of-the-art approaches in both quantitative metrics and
-              qualitative assessments, while maintaining spatiotemporal consistency.
+              high-quality frames but struggle with spatiotemporal coherence. To address these limitations, we develop a
+              specialized spatial-temporally consistent 4D Enhancer (4D-Enhancer) by extending video diffusion models to
+              enhance the 4D results. Our enhancer is trained on a carefully curated dataset of 4D rendered videos
+              paired with ground truth sequences. The enhancer demonstrates remarkable plug-and-play capability across
+              various 4D generation methods, including 4D reconstruction, X-to-4D generation, and multi-view video
+              generation, while significantly improving visual quality through its ability to maintain consistent
+              high-fidelity textures and surface details. In this work, we show how the enhancer is efficiently
+              integrated into the pipeline of these methods for generating 4D content, improving consistency and
+              quality. Extensive experiments demonstrate that our method significantly outperforms existing
+              state-of-the-art approaches in both quantitative metrics and qualitative assessments, while maintaining
+              spatiotemporal consistency.
             </p>
           </div>
         </div>
